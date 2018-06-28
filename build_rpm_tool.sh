@@ -50,6 +50,8 @@ function _prebuild(){
 
 
 function _update_installdep(){
+    # check urllib3 install
+    pip uninstall urllib3 -y
     # update
     echo -e "\033[32msystem updating...\033[0m"
     yum update -y
